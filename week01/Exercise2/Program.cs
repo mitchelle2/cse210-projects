@@ -13,20 +13,20 @@ class Program
 
         string GradeLetter = "";
 
-        if(Grade >90)
+        if(Grade >=90)
         {
             GradeLetter = "A";
         }
         
-        else if(Grade >80)
+        else if(Grade >=80)
         {
             GradeLetter = "B";
         }
-         else if( Grade >70)
+         else if( Grade >=70)
          {
             GradeLetter = "C";
          }
-         else if(Grade >60)
+         else if(Grade >=60)
          {
             GradeLetter = "D";
          }
@@ -36,7 +36,7 @@ class Program
          }
          Console.WriteLine($"Your grade is:{GradeLetter}");
 
-        if( Grade>70)
+        if( Grade>=70)
         {
           Console.WriteLine(" Congratulations you passed!"); 
         }
