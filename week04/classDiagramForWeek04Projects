@@ -1,0 +1,101 @@
+ClassDiagramForYoutubeVideo
++-------------------+
+|      Video        |
++-------------------+
+| - _title: string  |
+| - _author: string |
+| - _lengthInSeconds: int |
+| - _comments: List<Comment> |
++-------------------+
+| + AddComment(comment: Comment) |
+| + GetNumberOfComments(): int   |
+| + DisplayVideoInfo(): void     |
++-------------------+
+
++---------------------+
+|      Comment        |
++---------------------+
+| - _commenterName: string |
+| - _text: string          |
++---------------------+
+| (Constructor)           |
++---------------------+
+
+ProgramFlow
+Main program creates 3–4 Video objects.
+
+Each video gets 3–4 Comment objects via AddComment().
+
+The program loops through each Video, calling DisplayVideoInfo() to print:
+
+Title, author, length
+
+Number of comments
+
+Each commenter's name and text
+
+
+classDiagramForOlineOrdering
++-------------------+
+|      Product      |
++-------------------+
+| - _name: string         |
+| - _productId: string    |
+| - _price: double        |
+| - _quantity: int        |
++-------------------+
+| + GetTotalCost(): double     |
+| + GetPackingLabel(): string  |
++-------------------+
+
++-------------------+
+|     Customer      |
++-------------------+
+| - _name: string        |
+| - _address: Address    |
++-------------------+
+| + LivesInUSA(): bool     |
+| + GetName(): string      |
+| + GetAddress(): Address  |
++-------------------+
+
++-------------------+
+|      Address      |
++-------------------+
+| - _street: string        |
+| - _city: string          |
+| - _stateProvince: string |
+| - _country: string       |
++-------------------+
+| + IsInUSA(): bool            |
+| + GetAddressString(): string |
++-------------------+
+
++-------------------+
+|       Order       |
++-------------------+
+| - _products: List<Product> |
+| - _customer: Customer      |
++-------------------+
+| + AddProduct(product: Product) |
+| + GetTotalCost(): double       |
+| + GetPackingLabel(): string    |
+| + GetShippingLabel(): string   |
++-------------------+
+
+ProgramFlow
+Main program creates 2 Customer objects (one in USA, one international).
+
+Creates Order objects for each customer.
+
+Adds 2–3 Product objects per order using AddProduct().
+
+For each order:
+
+Call GetPackingLabel() → shows product names and IDs
+
+Call GetShippingLabel() → shows customer name and address
+
+Call GetTotalCost() → calculates product total + shipping
+
+
