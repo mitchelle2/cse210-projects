@@ -1,0 +1,4 @@
+request_id,employee_id,start_date,end_date,status
+1,89046,2025-06-12,2025-07-12,pending
+2,,2025/06/12,2025/07/02,pending
+3,,2025/06/12,2025/07/02,pending
