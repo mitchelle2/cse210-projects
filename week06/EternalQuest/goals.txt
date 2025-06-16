@@ -1,0 +1,5 @@
+75
+SimpleGoal|study daily|study maths everyday|40|True
+EternalGoal|make my bed|make my bed every morning|35
+ChecklistGoal|attend the temple this year|attend and paray in the temple|50|3|50|0
+SimpleGoal|sweep the yard|sweep the front yard|200|False
