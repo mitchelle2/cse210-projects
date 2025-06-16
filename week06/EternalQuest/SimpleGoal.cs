@@ -2,10 +2,18 @@ public class SimpleGoal : Goal
 {
     private bool _isComplete;
 
-    public SimpleGoal(string name, string desc, int points)
-        : base(name, desc, points)
+    // Default constructor (for new goals)
+    public SimpleGoal(string name, string description, int points)
+        : base(name, description, points)
     {
         _isComplete = false;
+    }
+
+    // Overloaded constructor (for loading from file)
+    public SimpleGoal(string name, string description, int points, bool isComplete)
+        : base(name, description, points)
+    {
+        _isComplete = isComplete;
     }
 
     public override int RecordEvent()
@@ -26,3 +34,5 @@ public class SimpleGoal : Goal
     public override string GetSaveData()
         => $"SimpleGoal|{GetName()}|{GetDescription()}|{GetPoints()}|{_isComplete}";
 }
+
+
