@@ -34,3 +34,9 @@ class Program
         }
     }
 }
+// This Eternal Quest program exceeds the assignment requirements by:
+// 1. Implementing a player leveling system: Users level up every 500 points.
+// 2. Providing feedback on reaching new levels.
+// 3. my program doesnt have a getdetailsstring but it does have a getstatus method that carries out similar functions
+
+
